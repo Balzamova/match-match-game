@@ -1,0 +1,80 @@
+/* SETTINGS PAGE */
+
+.settings-block {
+	width: 300px;
+	padding: 10px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #333333;
+}
+
+.settings__selector,
+.settings__label,
+.settings__list,
+.settings__item {
+	width: 100%;
+}
+
+.settings__selector {
+	margin-top: -10px;
+}
+
+.settings__label {
+	display: flex;
+	justify-content: space-between;
+}
+
+.settings__label:hover {
+	cursor: pointer;
+}
+
+.settings__name,
+.settings__item {
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 150%;
+	letter-spacing: 0.25px;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.settings__arrow {
+	width: 0;
+	height: 0;
+	border-top: 20px solid #333333;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	transition: transform 0.5s linear;
+}
+
+.settings__arrow.open {
+	transform: rotate(180deg);
+	transition: transform 0.5s linear;
+}
+
+.settings__label:hover .settings__arrow{
+	border-top: 20px solid var(--base);
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+}
+
+.settings__list {
+	margin-top: 5px;
+	padding: 5px;
+	border: 1px solid #333333;
+	z-index: 2;
+}
+
+.settings__item {
+	margin-bottom: 10px;
+	color: var(--black);
+
+}
+
+.settings__item:hover {
+	cursor: pointer;
+	background: var(--white);
+}
+
+.settings__item.checked {
+	background: var(--base);
+}

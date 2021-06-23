@@ -1,0 +1,59 @@
+{
+  "name": "match-match-game",
+  "version": "1.0.0",
+  "description": "match-match-game develop",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint && mocha",
+    "dev": "cross-env NODE_ENV=development webpack --mode development ",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "watch": "webpack --mode development --watch",
+    "lint": "eslint src"
+  },
+  "browserslist": "> 0.25%, not dead",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolling-scopes-school/balzamova-JSFE2021Q1.git"
+  },
+  "keywords": [
+    "js",
+    "webpack"
+  ],
+  "author": "Anastasiia Balzamova <balzam0401@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolling-scopes-school/balzamova-JSFE2021Q1/issues"
+  },
+  "homepage": "https://github.com/rolling-scopes-school/balzamova-JSFE2021Q1#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "@babel/preset-typescript": "^7.13.0",
+    "@typescript-eslint/eslint-plugin": "^4.22.1",
+    "@typescript-eslint/parser": "^4.22.1",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^8.1.1",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.6",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-webpack-plugin": "^2.5.4",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.6",
+    "prettier": "^2.3.0",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.1.1",
+    "ts-loader": "^9.2.2",
+    "webpack": "^5.38.1",
+    "webpack-bundle-analyzer": "^4.4.1",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "typescript": "^4.2.4"
+  }
+}

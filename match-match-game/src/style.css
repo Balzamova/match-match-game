@@ -1,0 +1,315 @@
+* { margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+*, *:before,*:after {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+:focus, :active {outline: none;}
+a:focus, a:active {outline: none;}
+nav, footer, header, aside {display: block}
+html, body {
+	width: 100%;
+	height: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input, button, textarea {font-family: inherit;}
+input::-ms-clear {display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype')
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	background-color: #ffffff;
+	--base: #2196F3;
+	--darkbase : #1E88E5;
+	--white: #ffffff;
+	--black: #000000;
+	--grey: rgba(0, 0, 0, 0.6);
+	position: relative;
+}
+
+body.lock {
+	overflow: hidden;
+}
+
+.about-page__container.none,
+.score-page__container.none,
+.settings-page__container.none,
+.game-page__container.none,
+.icon__item.register.none,
+.icon__item.start.none,
+.icon__item.icon.none,
+.header__burger.none,
+.settings__list.none,
+.wrapper__modal.none,
+.modal__finish.none,
+.modal__register.none,
+.header__button.register.none,
+.header__button.start.none,
+.header__button.stop.none,
+.header__icon.none,
+.modal__finish_btn.none {
+	display: none;
+}
+
+.wrapper {
+	min-height: 100%;
+	width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__heading {
+	opacity: 0;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+}
+
+.header {
+	width: 100%;
+	margin: 0 auto;
+	height: 0;
+}
+
+.header__wrapper {
+	width: 100%;
+	min-height: 100%;
+	background-color: var(--base);
+}
+
+.header__content,
+.main-page__content,
+.footer__content {
+	width: 1400px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo__item {
+	width: 80px;
+	height: 20px;
+	font-family: 'Roboto';
+	font-weight: 500;
+	font-size: 11px;
+	line-height: 145%;
+	background-color: var(--white);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 1.25px;
+	text-transform: uppercase;
+	color: var(--base);
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo-white {
+	background-color: var(--base);
+	color: var(--white);
+}
+
+.main {
+	flex: 1 1 auto;
+	margin: 120px auto 50px;
+}
+
+.main-page__content {
+	justify-content: center;
+}
+
+.about-page__container,
+.score-page__container,
+.settings-page__container,
+.game-page__container {
+	width: 1000px;
+	min-height: 800px;
+	padding: 50px;
+	background: rgba(0, 0, 0, 0.05);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about-page__title,
+.score-page__title,
+.settings-page__title {
+	font-family: Roboto;
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 30px;
+	letter-spacing: 0.15px;
+	color: rgba(0, 0, 0, 0.87);
+	align-self: flex-start;
+	margin-bottom: 30px;
+}
+
+.footer {
+	background-color: var(--base);
+}
+
+.footer__nav {
+	width: 100%;
+}
+
+.footer__list {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer__item {
+	padding: 10px 80px;
+}
+
+.footer__link {
+	font-size: 24px;
+}
+
+.wrapper__modal {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	background: rgba(0, 0, 0, 0.25);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 5;
+}
+
+.modal__finish,
+.modal__register {
+	position: fixed;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	padding: 10px;
+	border-radius: 5px;
+
+	background: var(--white);
+	z-index: 7;
+}
+
+.modal__finish {
+	width: 320px;
+	height: 116px;
+	top: calc(50% - 58px);
+	left: calc(50%  - 160px);
+}
+
+.modal__finish_info {
+	width: 320px;
+	font-family: Roboto;
+	font-size: 14px;
+	line-height: 143%;
+	letter-spacing: 0.25px;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.modal__finish_info span {
+	font-weight: 800;
+}
+
+.modal__finish_btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	width: 53px;
+	height: 36px;
+	margin-top: 20px;
+	background: var(--base);
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+	border-radius: 4px;
+
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 114%;
+	letter-spacing: 1.25px;
+	text-transform: uppercase;
+	color: var(--white);
+	transition: background 0.5s linear;
+}
+
+.modal__finish_btn:hover {
+	background: var(--darkbase);
+	transition: background 0.5s linear;
+}
+
+@media (max-width: 1480px) {
+  .header__content,
+  .main-page__content,
+  .footer__content {
+    width: 1000px;
+  }
+
+  .about-page__container,
+  .score-page__container,
+  .settings-page__container,
+  .game-page__container {
+    width: 800px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header__content,
+  .main-page__content,
+  .footer__content {
+    width: 800px;
+  }
+
+  .about-page__container,
+  .score-page__container,
+  .settings-page__container,
+  .game-page__container {
+    width: 720px;
+  }
+}
+
+@media (max-width: 860px) {
+  .header__content,
+  .main-page__content,
+  .footer__content {
+    width: 700px;
+  }
+
+  .about-page__container,
+  .score-page__container,
+  .settings-page__container,
+  .game-page__container {
+    width: 660px;
+  }
+}

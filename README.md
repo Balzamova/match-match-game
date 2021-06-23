@@ -6,7 +6,7 @@
 1. **Typescript**
 2. **CSS**
 3. **Webpack**
-4. **IndexedDb API*
+4. **IndexedDb API**
 
 #### Task: [link](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/match-match-game.md)
 

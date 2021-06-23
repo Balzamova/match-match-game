@@ -1,6 +1,6 @@
 # Match-match-game
 
-## My ready page-proof: [link](https://balzamova.github.io/match-match-game/)
+## Ready project: [link](https://balzamova.github.io/match-match-game/)
 
 ### Used frameworks: </br>
 1. **Typescript**
